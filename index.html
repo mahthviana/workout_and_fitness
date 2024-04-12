@@ -1,171 +1,199 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Workout and Fitness</title>
 
-    <!--STYLE APENAS PARA TESTE-->
-    <style>
-        body{
-            background-color: #232532;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <!-- Pensei em colocar tanto o "workout" quanto a lista em uppercase com o CSS, por isso deixei tudo minúsculo-->
-        <span><a href="#">workout</a></span>
+    <div class="page">
+        <header>
+            <!-- Pensei em colocar tanto o "workout" quanto a lista em uppercase com o CSS, por isso deixei tudo minúsculo-->
+            <span><a href="#">workout</a></span>
 
-        <nav>
-            <!-- está em lista, mas com o CSS dá pra alinhar tudo direitinho, então fica em lista mesmo. É só tirar os pontos e deixar um lado a lado e colocar tanto o "workout" quanto a lista nas extremidades (assim como tá na página)-->
-            <ul>
-                <li><a href="#">workouts</a></li>
-                <li><a href="#">programs</a></li>
-                <li><a href="#">healthy living</a></li>
-                <li><a href="#">community</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">store</a></li>
-            </ul>
-        </nav>
-    </header>
+            <nav>
+                <!-- está em lista, mas com o CSS dá pra alinhar tudo direitinho, então fica em lista mesmo. É só tirar os pontos e deixar um lado a lado e colocar tanto o "workout" quanto a lista nas extremidades (assim como tá na página)-->
+                <ul>
+                    <li><a href="#">workouts</a></li>
+                    <li><a href="#">programs</a></li>
+                    <li><a href="#">healthy living</a></li>
+                    <li><a href="#">community</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">store</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <main>
-        <section>
-            <!-- O h1 também colocar em uppercase-->
-            <h1>workout with me</h1>
-            <p>A huge selection of health and fitness content, healthy recipes and transformation stories to help you get fit and stay fit!</p>
-            
-            <figure>
-                <img src="arquivos/homem_amarrando_tenis.png" alt="Um homem amarrando o tênis">
-                <img src="arquivos/km.png" alt="4,95 quilômetros">
-                <img src="arquivos/tutorial.png" alt="350+ video tutorial">
-                <img src="arquivos/workout.png" alt="500+ Free Workout Videos">
-            </figure>
-
-            <button type="button">Join Club Now!</button>
-        </section>
-
-        <section>
-            <figure>
-                <h3>AS A FEATURED IN</h3>
-                <img src="arquivos/nike.png" alt="">
-                <img src="arquivos/BuzzFeed.png" alt="">
-                <img src="arquivos/ESPRIT.png" alt="">
-                <img src="arquivos/national_geographic.png" alt="">
-                <img src="arquivos/dw.png" alt="">
-            </figure>
-        </section>
-
-        <section>
-            <h2>Not sure where to start?</h2>
-            <p>Programs offer day-to-day guidance on an interactive calendar to keep you on track.</p>
-
-            <!--parte da landing page que tem os quadros-->
-            <div id="quadros">
-                <!--Quadro 1-->
-                <a href="#">
-                    <div id="quadro1">
-                        <h4>Workout Videos</h4>
-                        <p>Access to hundreds of free, full-length workout videos.</p>
-                        <img src="arquivos/seta.png" alt="" class="seta um">
+        <main>
+            <section class="introduction">
+                <!-- O h1 também colocar em uppercase-->
+                <h1>workout with me</h1>
+                <p>A huge selection of health and fitness content, healthy recipes and transformation stories to help you get fit and stay fit!</p>
+                
+                <figure>
+                    <div class="">
+                        <div id="runner">
+                            <img src="arquivos/homem_amarrando_tenis.png" width="409px" height="684px" alt="Um homem amarrando o tênis">
+                        </div>
+                        
+                        <div id="km">
+                            <img src="arquivos/km.png" alt="4,95 quilômetros">
+                        </div>
+                        <div id="tutorial">
+                            <img src="arquivos/tutorial.png" alt="350+ video tutorial">
+                        </div>
+                        <div id="free_workout">
+                            <img src="arquivos/workout.png" alt="500+ Free Workout Videos">
+                        </div>
                     </div>
-                </a>
+                </figure>
 
-                <!--Quadro 2-->
-                <a href="#">
-                    <div id="quadro2">
-                        <h4>Workout Programs</h4>
-                        <p>Affordable and effective workout programs.</p>
-                        <img src="arquivos/seta.png" alt="" class="seta dois">
+                <button type="button" class="join_club_now">Join Club Now!</button>
+            </section>
+
+            <section class="as_a_featured_in">
+                <h3>as a featured in</h3>
+                <figure class="brands">
+                    <img src="arquivos/nike.png" alt="">
+                    <img src="arquivos/BuzzFeed.png" alt="">
+                    <img src="arquivos/ESPRIT.png" alt="">
+                    <img src="arquivos/national_geographic.png" alt="">
+                    <img src="arquivos/dw.png" alt="">
+                    <img src="arquivos/huffpost.png" alt="">
+                </figure>
+            </section>
+
+            <section class="introduction_boards">
+                <h2>Not sure where to start?</h2>
+                <p>Programs offer day-to-day guidance on an interactive calendar to keep you on track.</p>
+
+                <!--parte da landing page que tem os quadros-->
+                <div class="
+                boards">
+                    <!--Quadro 1-->
+                        <div class="board1">
+                            <a href="#">
+                                <h4>Workout Videos</h4>
+                                <p>Access to hundreds of free, full-length workout videos.</p>
+                                <img src="arquivos/seta.png" alt="" class="seta um">
+                            </a>
+                        </div>
+
+                    <!--Quadro 2-->
+                        <div class="board2">
+                            <a href="#">
+                                <h4>Workout Programs</h4>
+                                <p>Affordable and effective workout programs.</p>
+                                <img src="arquivos/seta.png" alt="" class="seta dois">
+                            </a>
+                        </div>
+
+                    <!--Quadro 3-->
+                        <div class="board3">
+                            <a href="#">
+                                <h4>Meal Plans</h4>
+                                <p>Plans built with registered dietitians and nutritionists.</p>
+                                <img src="arquivos/seta.png" alt="" class="seta tres">
+                            </a>
+                        </div>
+
+                    <!--Quadro 4-->
+                        <div class="board4">
+                            <a href="#">
+                                <h4>WO Plus ALL ACCESS</h4>
+                                <p>Add powerful features to your membership.</p>
+                                <img src="arquivos/seta.png" alt="" class="seta quatro">
+                            </a>
+                        </div>
+
+                </div>
+                <!--Fim dos quadros-->
+            </section>
+
+            <section class="
+            informative">
+                <div class="in_home">
+                    <div class="descriptive first">
+                        <h2>Work out at home for free.</h2>
+                        <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts, healthy recipes and informative articles, as well as one of the most positive communities on the web, you&apos;ll have everything you need to reach your personal fitness goals &minus; for free!</p>
                     </div>
-                </a>
+                    <a href="#" class="see_more top">
+                        See More 
+                        <img src="arquivos/seta.png" alt="" class="seta cinco">
+                    </a>
+                    
+                    <img src="arquivos/yoga.png" alt="" id="yoga">
+                </div>
 
-                <!--Quadro 3-->
-                <a href="#">
-                    <div id="quadro3">
-                        <h4>Meal Plans</h4>
-                        <p>Plans built with registered dietitians and nutritionists.</p>
-                        <img src="arquivos/seta.png" alt="" class="seta tres">
+                <div class="in_gym">
+                    <div class="descriptive second">
+                        <h2>Get more with low-cost training programs and advanced features.</h2>
+                        <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts, healthy recipes and informative articles, as well as one of the most positive communities on the web, you&apos;ll have everything you need to reach your personal fitness goals &minus; for free!</p>
                     </div>
-                </a>
 
-                <!--Quadro 4-->
-                <a href="#">
-                    <div id="quadro4">
-                        <h4>WO Plus ALL ACCESS</h4>
-                        <p>Add powerful features to your membership.</p>
-                        <img src="arquivos/seta.png" alt="" class="seta quatro">
-                    </div>
-                </a>
-            </div>
-            <!--Fim dos quadros-->
-        </section>
+                    <a href="#" class="see_more down">
+                        See More
+                        <img src="arquivos/seta.png" alt="" class="seta seis">
+                    </a>
+                    <img src="arquivos/corda_naval.png" alt="" id="corda_naval">
+                </div>
+            </section>
+        </main>
 
-        <section>
-            <div>
-                <h2>Work out at home for free.</h2>
-                <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts, healthy recipes and informative articles, as well as one of the most positive communities on the web, you&apos;ll have everything you need to reach your personal fitness goals &minus; for free!</p>
-                <a href="#" class="see_more">
-                    See More 
-                    <img src="arquivos/seta.png" alt="" class="seta cinco">
-                </a>
-                <img src="arquivos/yoga.png" alt="" id="corda">
-            </div>
+        <footer>
+            <h2>Memberships</h2>
+            <hr>
+            <!--Quadros do rodapé-->
+           <div class="memberships">
+                <div class="join_for_free">
+                    <h3>Join for Free</h3>
+                    <p>Reach your fitness goals or maintain your healthy lifestyle with professional training and support from a positive and active online community.</p>
+                    <ul>
+                        <li>~600 Full-Length Workout Videos</li>
+                        <li>Customizable Calendar</li>
+                        <li>Healthy Recipes</li>
+                        <li>Health and Fitness Articles</li>
+                        <li>Positive and Supportive Online Community</li>
+                        <li>No Credit Card Needed</li>
+                    </ul>
+                    <a href="#" class="see_more">
+                        See More
+                        <img src="arquivos/seta.png" alt="" class="seta sete">
+                    </a>
+                </div>
 
-            <div>
-                <h2>Get more with low-cost training programs and advanced features.</h2>
-                <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts, healthy recipes and informative articles, as well as one of the most positive communities on the web, you&apos;ll have everything you need to reach your personal fitness goals &minus; for free!</p>
+                <div class="wo_plus">
+                    <h3>WO Plus</h3>
+                    <p>WO Plus includes everything you get with a free membership and adds brand new convenience features, fitness tools, and unique content.</p>
+                    <ul>
+                        <li>Ads-Free Website and Videos</li>
+                        <li>Surprise Me Workout Selection Tool</li>
+                        <li>Statistics for Your Activities</li>
+                        <li>Enter and Track Custom Workouts</li>
+                        <li>FB Plus Exclusive Workouts</li>
+                        <li>Trackers to See Your Progress</li>
+                        <li>FB Plus Content and Challenges</li>
+                        <li>Video Tags</li>
+                        <li>FB Plus Routines</li>
+                        <li>Rest Day Complete</li>
+                    </ul>
 
-                <a href="#" class="see_more">
-                    See More
-                    <img src="arquivos/seta.png" alt="" class="seta seis">
-                </a>
-                <img src="arquivos/corda_naval.png" alt="" id="corda_naval">
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <h2>Memberships</h2>
-        <hr>
-        <!--Quadros do rodapé-->
-        <div>
-            <h3>Join for Free</h3>
-            <p>Reach your fitness goals or maintain your healthy lifestyle with professional training and support from a positive and active online community.</p>
-            <ul>
-                <li>~600 Full-Length Workout Videos</li>
-                <li>Customizable Calendar</li>
-                <li>Healthy Recipes</li>
-                <li>Health and Fitness Articles</li>
-                <li>Positive and Supportive Online Community</li>
-                <li>No Credit Card Needed</li>
-            </ul>
-            <a href="#" class="see_more">
-                See More
-                <img src="arquivos/seta.png" alt="" class="seta sete">
-            </a>
-        </div>
-
-        <div>
-            <h3>WO Plus</h3>
-            <p>WO Plus includes everything you get with a free membership and adds brand new convenience features, fitness tools, and unique content.</p>
-            <ul>
-                <li>Ads-Free Website and Videos</li>
-                <li>Surprise Me Workout Selection Tool</li>
-                <li>Statistics for Your Activities</li>
-                <li>Enter and Track Custom Workouts</li>
-                <li>FB Plus Exclusive Workouts</li>
-                <li>Trackers to See Your Progress</li>
-                <li>FB Plus Content and Challenges</li>
-                <li>Video Tags</li>
-                <li>FB Plus Routines</li>
-                <li>Rest Day Complete</li>
-            </ul>
-
-            <button type="button">Join Club Now!</button>
-        </div>
-        <button type="button">Back to Top &uarr;</button>
-    </footer>
+                    <button type="button">Join Club Now!</button>
+                </div>
+           </div>
+            <button type="button" id="back">Back to Top &uarr;</button>
+        </footer>
+    </div>
 </body>
 </html>

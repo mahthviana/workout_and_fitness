@@ -1,0 +1,543 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden; /* esconde a barra horizontal */
+}
+
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    background-color: #171717;
+    color: #FAFAF9;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 36px;
+}
+
+nav ul {
+    display: flex;
+    column-gap: 10px;
+    flex-direction: row;
+    text-transform: uppercase;
+}
+
+nav ul li {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 12px;
+    display: flex;
+    padding-right: 5px;
+    color: #FAFAF9;
+}
+
+span a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FAFAF9;
+    text-transform: uppercase;
+}
+
+main {
+    padding: 126px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    position: relative;
+    right: 30px;
+    word-wrap: break-word;
+    font-weight: 800;
+    font-size: 168px;
+    width: 883px;
+    height: 340px;
+    line-height: 170px;
+}
+
+#runner {
+    margin-top: -350px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: flex-start;
+    position: relative;
+    left: 10px;
+}
+
+section:not(#runner) {
+    padding: 0;
+}
+
+section p {
+    font-weight: 400;
+    font-size: 16px;
+    width: 560px;
+    color: rgba(239, 237, 232, 0.65);
+    margin-top: 36px;
+}
+
+#km {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 715px;
+    left: 60px;
+}
+
+#tutorial {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    bottom: 444px;
+    left: 554px;
+}
+
+#free_workout {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 444px;
+    left: 116px;
+}
+
+.introduction button {
+    background-color: #E6533C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 200px;
+    height: 70px;
+    padding: 24px;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    bottom: 560px;
+    cursor: pointer;
+
+}
+
+.introduction button:hover {
+    transition: 0.5s;
+    background: #933B2E;
+}
+
+.introduction .join_club_now{
+    color: white;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 1px;
+
+}
+
+section h3 {
+    color: rgba(239, 237, 232, 0.65);
+    font-family: "Inter", sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    bottom: 33px;
+}
+
+.as_a_featured_in {
+    margin-top: -400px;
+}
+
+.brands {
+    display: flex;
+    column-gap: 10px;
+    margin-bottom: 176px;
+
+}
+
+.brands img {
+    height: 20px;
+}
+
+
+/* início dos quadros */
+.introduction_boards h2 {
+    width: 640px;
+    color: #FAFAF9;
+    font-size: 40px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    line-height: 50px;
+    letter-spacing: 0.30px;
+    word-wrap: break-word;
+    margin-bottom: 24px;
+}
+
+.introduction_boards p {
+    color: rgba(239, 237, 232, 0.65);
+    width: 868px;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.50px;
+    word-wrap: break-word;
+    position: relative;
+    bottom: 26px;
+}
+
+.boards{
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    margin-top: 36px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 26px;
+    /* position: relative;
+    left: 26px; */
+    margin-right: -90px;
+    margin-bottom: 20px;
+}
+
+.boards p {
+    width: 192px;
+    height: 49px;
+    color: rgba(239, 237, 232, 0.65);
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    word-wrap: break-word;
+    position: relative;
+    left: 50px;
+    top: 25px;
+
+}
+
+.boards h4 {
+    color: #FAFAF9;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    line-height: 24px;
+    word-wrap: break-word;
+    position: relative;
+    left: 48px;
+    top: 50px;
+}
+
+.boards .um, .dois, .tres, .quatro  {
+    position: relative;
+    left: 220px;
+    top: 30px;
+
+}
+
+.board1, .board2, .board3, .board4 {
+    width: 304px;
+    height: 190px;
+    border-radius: 12px;
+    background-color: #323443;
+}
+
+.board2 {
+    background-color: #232532;
+}
+
+.board4 {
+    background-color: #4F5261;
+}
+
+.quatro {
+    margin-bottom: 40px;
+}
+/* final dos quadros */
+
+/* informativo */
+.informative h2 {
+    width: 526px;
+    color: #FAFAF9;
+    font-size: 40px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    line-height: 50px;
+    letter-spacing: 0.30px;
+    word-wrap: break-word;
+}
+
+.informative p {
+    width: 480px;
+    height: 120px;
+    color: rgba(239, 237, 232, 0.65);
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.30px;
+    word-wrap: break-word;
+}
+
+.informative a { 
+    color: #0070C9;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0.50px;
+    word-wrap: break-word;
+}
+
+/* primeiro descritivo */
+.in_home {
+    display: flex;
+
+    margin-top: 200px;
+}
+
+.in_home .first {
+    margin-top: 200px;
+}
+
+.in_home .top {
+    position: relative;
+    top: 420px;
+    right: 525px;
+    display: inline;
+    flex-direction: row;
+}
+
+
+/* segundo descritivo */
+.in_gym {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 190px;
+}
+
+.second {
+    position: relative;
+    top: 80px;
+}
+
+.down {
+    position: relative;
+    top: 410px;
+    left: 100px;
+}
+
+.cinco, .seis {
+    position: relative;
+    left: 50px;
+    bottom: 36px;
+}
+footer {
+    margin: 36px;
+    margin-left: 96px;
+    margin-right: 96px;
+    
+}
+
+footer h2 {
+    width: 423px;
+    color: #FAFAF9;
+    font-size: 50px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    line-height: 70px;
+    letter-spacing: 0.83px;
+    word-wrap: break;
+    
+    position: relative;
+    right: 3px;
+}
+
+footer hr {
+    position: relative;
+    top: 25px;
+    width: 1152px;
+    height: 0px;
+    opacity: 0.1;
+    border: 0.50px white solid;
+
+    margin-bottom: 80px;
+}
+
+footer .join_for_free{
+    background-color: #232532;
+    width: 538px;
+    height: 640px;
+}
+
+footer .wo_plus {
+    background-color: #323443;
+    width: 538px;
+    height: 640px;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+    margin-top: 26px;
+
+    position: relative;
+    left: 30px;
+}
+
+footer .join_for_free h3{
+    color: #FAFAF9;
+    
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 50px;
+
+    width: 402px;
+    font-size: 40px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    line-height: 50px;
+    letter-spacing: 0.30px;
+    word-wrap: break-word;
+}
+
+footer .join_for_free p {
+    color: rgba(239, 237, 232, 0.65);
+    width: 402px;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.50px;
+    word-wrap: break-word;
+
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 55px;
+    margin-top: 50px;
+}
+
+footer .join_for_free ul li {
+    color: rgba(239, 237, 232, 0.65);
+    width: 402px;
+    height: 15px;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.50px;
+    word-wrap: break-word;
+}
+
+footer .see_more {
+    color: #0070C9;
+
+    position: relative;
+    top: 120px;
+    left: 90px;
+}
+
+footer .sete {
+    position: relative;
+    left: 8px;
+    top: 6px;
+}
+
+footer .wo_plus h3{
+    color: #FAFAF9;
+    
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 50px;
+
+    width: 402px;
+    font-size: 40px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    line-height: 50px;
+    letter-spacing: 0.30px;
+    word-wrap: break-word;
+}
+
+footer .wo_plus p {
+    color: rgba(239, 237, 232, 0.65);
+    width: 402px;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.50px;
+    word-wrap: break-word;
+
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 55px;
+    margin-top: 50px;
+}
+
+footer .wo_plus ul li {
+    color: rgba(239, 237, 232, 0.65);
+    width: 402px;
+    height: 15px;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.50px;
+    word-wrap: break-word;
+}
+
+footer .wo_plus button {
+    background-color: #0070C9;
+    border: none;
+    width: 150px;
+    height: 30px;
+    padding: 4px 14px 4px 14px; 
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #FAFAF9;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    line-height: 22px;
+    word-wrap: break-word;
+
+    position: relative;
+    top: 50px;
+    left: 70px;
+}
+
+.memberships {
+    display: flex;
+    column-gap: 78px;
+}
+
+#back {
+    position: relative;
+    left: 1070px;
+
+    cursor: pointer;
+}
