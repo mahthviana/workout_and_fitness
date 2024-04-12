@@ -528,6 +528,8 @@ footer .wo_plus button {
     position: relative;
     top: 50px;
     left: 70px;
+
+    cursor: pointer;
 }
 
 .memberships {
